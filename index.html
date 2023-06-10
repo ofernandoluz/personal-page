@@ -6,77 +6,74 @@
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
+      background-color: black;
+      color: white;
     }
-    
     h1 {
-      color: #333;
+      color: white;
       font-size: 24px;
       text-align: center;
       margin-bottom: 20px;
     }
-    
     p {
       color: #666;
     }
-    
     ul {
       margin: 0;
       padding: 0;
     }
-
-    /* Estilos para telas menores */
-    @media only screen and (max-width: 600px) {
-      h1 {
-        font-size: 18px;
-      }
-
-      /* Layout flexível para o menu de navegação */
-      ul {
-        display: flex;
-        flex-direction: column;
-      }
-
-      /* Estilos para imagens responsivas */
-      img {
-        max-width: 100%;
-        height: auto;
-      }
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 1.6em;
     }
-
-    /* Estilos para telas maiores */
-    @media only screen and (min-width: 1200px) {
-      body {
-        max-width: 960px;
-        margin: 0 auto;
-      }
+    .logo-container .logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
     }
-  </style>    
-<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 1.6em;">
-  <div style="width: 150px; height: 150px; border-radius: 50%; overflow: hidden; box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);">
-    <iframe loading="lazy" style="width: 100%; height: 100%; border: none;"
-      src="https://www.canva.com/design/DAFlSlR0Dws/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-    </iframe>
-  </div>
-</div>
-<a href="https://www.canva.com/design/DAFlSlR0Dws/view?utm_content=DAFlSlR0Dws&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
-  target="_blank" rel="noopener">Logotipo</a> de Fernando Luz
-  <h1>Bem-vindo a minha página pessoal</h1>
+    .logo-container .logo iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .name {
+      color: yellow;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    a {
+      color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="name">Fernando Luz</div>
+  <h1>Bem-vindo à minha página pessoal</h1>
   <p>Meu nome é Fernando Luz.</p>
   <h2>Sobre mim</h2>
   <p>Sou um entusiasta da programação e estou aprendendo a desenvolver aplicativos web. Adoro explorar novas tecnologias e estou constantemente aprimorando minhas habilidades.</p>
-
   <h2>Habilidades</h2>
   <ul>
     <li>HTML</li>
     <li>CSS</li>
     <li>JavaScript</li>
   </ul>
-  
   <p>Conecte-se comigo:</p>
   <ul>
     <li><a href="https://www.linkedin.com/in/fernandosilvaluz/">LinkedIn</a></li>
     <li><a href="https://github.com/ofernandoluz">GitHub</a></li>
     <li><a href="https://www.instagram.com/thefernandoluz/">Instagram</a></li>
   </ul>
+  <div class="logo-container">
+    <div class="logo">
+      <iframe loading="lazy" src="https://www.canva.com/design/DAFlSlR0Dws/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+    </div>
+  </div>
 </body>
 </html>
